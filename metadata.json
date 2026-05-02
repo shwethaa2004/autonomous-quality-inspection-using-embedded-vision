@@ -1,0 +1,6 @@
+{
+  "name": "VisionInspect AI",
+  "description": "Autonomous quality inspection using on-device vision to classify products as GOOD or DEFECT in real-time.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": []
+}

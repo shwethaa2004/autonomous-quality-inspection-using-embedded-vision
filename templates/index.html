@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionInspect AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VisionInspect AI</h1>
+            <p>Autonomous Quality Inspection System</p>
+        </header>
+        
+        <main>
+            <div class="video-container">
+                <img src="{{ url_for('video') }}" width="100%" alt="Live Stream">
+            </div>
+            
+            <div class="controls">
+                <div class="status-indicator" id="status-box">
+                    <span id="status-text">WAITING...</span>
+                </div>
+                <div class="info">
+                    <p>Inference Mode: <strong>On-Device</strong></p>
+                    <p>Latency: <strong>&lt;100ms</strong></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 VisionInspect AI</p>
+        </footer>
+    </div>
+</body>
+</html>
